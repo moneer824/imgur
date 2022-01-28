@@ -18,13 +18,15 @@
   top: 0;
   left: 0;
   object-fit: cover;
+  /* object-position: left left; */
 }
-.back{
-    width: 100%;
-
+.back {
+  width: 100%;
 }
-.back img{
-    width: 100%;
+.back img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .nav > div {
   /* height: 80%; */
@@ -35,8 +37,6 @@
   box-sizing: border-box;
   border: none;
   border-radius: 3px;
-
-
 }
 #sign-in button:nth-child(1) {
   padding: 8px 10px;
