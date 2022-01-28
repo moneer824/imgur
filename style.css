@@ -73,4 +73,7 @@ margin: 30px;
    #sign-in{
        display: none;
    }
+   .nav input {
+    width: 110px;
+   }
   }
