@@ -17,8 +17,15 @@
   position: fixed;
   top: 0;
   left: 0;
+  object-fit: cover;
 }
+.back{
+    width: 100%;
 
+}
+.back img{
+    width: 100%;
+}
 .nav > div {
   /* height: 80%; */
   /* background-color: red; */
