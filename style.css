@@ -66,6 +66,7 @@
   border: none;
   font-weight: bold;
   color: white;
+  width: 300px;
 }
 #parent {
   display: flex;
