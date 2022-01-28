@@ -1,41 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.nav{
-    height: 60px;
-    background-color: #f3f3f3;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
+.nav {
+  height: 60px;
+  background: url("/img/backgd.png");
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.nav > div{
-    /* height: 80%; */
-    /* background-color: red; */
+.nav > div {
+  /* height: 80%; */
+  /* background-color: red; */
 }
-.nav button{
-    padding: 8px 10px;
-    box-sizing: border-box;
+.nav button {
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px;
+
+
 }
-.nav input{
-    padding: 8px 10px;
-    box-sizing: border-box;
+#sign-in button:nth-child(1) {
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background: #6432f9;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+}
+#sign-in button:nth-child(2) {
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background: transparent;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+}
+#sign-in button:nth-child(3) {
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background: #1bb76e;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+}
+.nav input {
+  padding: 8px 10px;
+  box-sizing: border-box;
+  background-color: #454469;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+  color: white;
 }
 #parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
+
   margin: auto;
   box-sizing: border-box;
-
 }
 #parent > div {
   width: 300px;
@@ -51,29 +89,26 @@
   object-position: center;
 }
 
-.container{
-    text-align: center;
+.container {
+  text-align: center;
 }
 
-.container > button{
-padding: 10px 30px;
-margin: 30px;
+.container > button {
+  padding: 10px 30px;
+  margin: 30px;
 }
 
-.logo{
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(56, 56, 56);
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
-   #sign-in{
-       display: none;
-   }
-   .nav input {
-    width: 110px;
-   }
+  #sign-in {
+    display: none;
   }
+  .nav input {
+    width: 110px;
+  }
+}
