@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav {
   height: 60px;
   background: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
@@ -18,10 +22,42 @@
   top: 0;
   left: 0;
   object-fit: cover;
-  /* object-position: left left; */
+  z-index: 5;
 }
 .back {
   width: 100%;
+  height: 80px;
+}
+#full-screen {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  padding: 60px 0 0 0;
+  box-sizing: border-box;
+  display: none;
+}
+#full-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#hide {
+  margin: 0px;
+  padding: 8px 10px;
+  background: #6432f9;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  /* font-weight: bold; */
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 .back img {
   width: 100%;
@@ -99,6 +135,7 @@
 
 .container {
   text-align: center;
+  position: relative;
 }
 
 .container > button {
@@ -118,5 +155,9 @@
   }
   .nav input {
     width: 110px;
+  }
+  #hide {
+    top: 90vh;
+    width: 100%;
   }
 }
